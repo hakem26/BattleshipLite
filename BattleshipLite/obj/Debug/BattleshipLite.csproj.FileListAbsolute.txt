@@ -1,0 +1,8 @@
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\bin\Debug\BattleshipLite.exe.config
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\bin\Debug\BattleshipLite.exe
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\bin\Debug\BattleshipLite.pdb
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.csproj.AssemblyReference.cache
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.csproj.SuggestedBindingRedirects.cache
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.csproj.CoreCompileInputs.cache
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.exe
+D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.pdb
