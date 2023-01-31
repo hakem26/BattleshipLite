@@ -1,0 +1,6 @@
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\bin\Debug\BattleshipLiteClassLibrary.dll
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\bin\Debug\BattleshipLiteClassLibrary.pdb
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\obj\Debug\BattleshipLiteClassLibrary.csproj.AssemblyReference.cache
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\obj\Debug\BattleshipLiteClassLibrary.csproj.CoreCompileInputs.cache
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\obj\Debug\BattleshipLiteClassLibrary.dll
+D:\hkm\projects\C#\BattleshipLite\BattleshipLiteClassLibrary\obj\Debug\BattleshipLiteClassLibrary.pdb
