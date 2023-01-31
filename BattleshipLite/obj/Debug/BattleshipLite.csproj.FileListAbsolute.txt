@@ -6,3 +6,14 @@ D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\Battle
 D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.csproj.CoreCompileInputs.cache
 D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.exe
 D:\hkm\projects\BattleshipLite\BattleshipLiteApp\BattleshipLite\obj\Debug\BattleshipLite.pdb
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\bin\Debug\BattleshipLite.exe.config
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\bin\Debug\BattleshipLite.exe
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\bin\Debug\BattleshipLite.pdb
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\bin\Debug\BattleshipLiteClassLibrary.dll
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\bin\Debug\BattleshipLiteClassLibrary.pdb
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.csproj.AssemblyReference.cache
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.csproj.SuggestedBindingRedirects.cache
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.csproj.CoreCompileInputs.cache
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.csproj.CopyComplete
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.exe
+D:\hkm\projects\C#\BattleshipLite\BattleshipLite\obj\Debug\BattleshipLite.pdb
