@@ -13,8 +13,18 @@ namespace BattleshipLite
         static void Main(string[] args)
         {
             WelcomeMessage();
-            PlayerInfoModel player1 = CreatePlayer("Player 1");
-            PlayerInfoModel player2 = CreatePlayer("Player 2");
+            PlayerInfoModel activePlayer = CreatePlayer("Player 1");
+            PlayerInfoModel opponent = CreatePlayer("Player 2");
+            PlayerInfoModel winner = null;
+            do
+            {
+                //display grid from active player on where they fired
+                //ask active player for a shot
+                //determine if it is a valid player
+                //determine shot result
+                //determine if game is over
+                //if over set active player as  winner, else swpap positions: activePlayer  <=> opponent 
+            } while (winner == null);
             Console.ReadLine();
         }
 
