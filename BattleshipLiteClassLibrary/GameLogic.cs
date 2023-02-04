@@ -9,6 +9,16 @@ namespace BattleshipLiteClassLibrary
 {
     public class GameLogic
     {
+        public static int GetShotCount(PlayerInfoModel winner)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool IdentifyShotResult(PlayerInfoModel opponent, char row, int column)
+        {
+            throw new NotImplementedException();
+        }
+
         public static void  InitializeGrid(PlayerInfoModel model)
         {
             List<char> letters = new List<char>
@@ -28,7 +38,27 @@ namespace BattleshipLiteClassLibrary
             }
         }
 
+        public static void MarkShotRelult(PlayerInfoModel activePlayer, char row, int column)
+        {
+            throw new NotImplementedException();
+        }
+
         public static bool Placeship(PlayerInfoModel model, string location)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool PlayerStillActive(PlayerInfoModel opponent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static (char row, int column) SplitShotIntoRowAndColumn(string shot)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool ValidateShot(PlayerInfoModel activePlayer, char row, int column)
         {
             throw new NotImplementedException();
         }
@@ -42,7 +72,6 @@ namespace BattleshipLiteClassLibrary
                 Status = GridSpotStatus.Empty
             };
             model.ShotGrid.Add(spot);
-
         }
     }
 }

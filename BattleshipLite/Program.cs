@@ -18,14 +18,86 @@ namespace BattleshipLite
             PlayerInfoModel winner = null;
             do
             {
-                //display grid from active player on where they fired
-                //ask active player for a shot
-                //determine if it is a valid player
-                //determine shot result
-                //determine if game is over
-                //if over set active player as  winner, else swpap positions: activePlayer  <=> opponent 
+                DisplayShotGrid(activePlayer);
+
+                RecordPlayerShot(activePlayer, opponent);
+
+                bool doesGameContinue = GameLogic.PlayerStillActive(opponent);
+
+                if (doesGameContinue == true)
+                {
+                    (activePlayer, opponent) = (opponent , activePlayer);
+                }
+                else
+                {
+                    winner = activePlayer;
+                }
             } while (winner == null);
+            IdentifyWinner(winner);
             Console.ReadLine();
+        }
+
+        private static void IdentifyWinner(PlayerInfoModel winner)
+        {
+            Console.WriteLine($"Congras to {winner.UsersName} for winning this game!");
+            Console.WriteLine($"{winner.UsersName} took {GameLogic.GetShotCount(winner)} shots");
+        }
+
+        private static void RecordPlayerShot(PlayerInfoModel activePlayer, PlayerInfoModel opponent)
+        {
+            char row = '\0';
+            int column = 0;
+            bool isValidShot = false;
+            do
+            {
+                string shot = AskForShot();
+                (row, column) = GameLogic.SplitShotIntoRowAndColumn(shot);
+                isValidShot = GameLogic.ValidateShot(activePlayer, row, column);
+                if (isValidShot == false)
+                {
+                    Console.WriteLine("Invalid shot location. Please try again");
+                }
+            } while (isValidShot == false);
+
+            bool isAHit = GameLogic.IdentifyShotResult(opponent, row, column);
+            
+            GameLogic.MarkShotRelult(activePlayer, row, column);
+        }
+
+        private static string AskForShot()
+        {
+            Console.WriteLine("Please enter your shot selection: ");
+            string output = Console.ReadLine();
+            return output;
+        }
+
+        private static void DisplayShotGrid(PlayerInfoModel activePlayer)
+        {
+            char currentRow = activePlayer.ShotGrid[0].SpotLetter;
+            foreach (var gridSpot in activePlayer.ShotGrid)
+            {
+                if (gridSpot.SpotLetter != currentRow)
+                {
+                    Console.WriteLine();
+                    currentRow = gridSpot.SpotLetter;
+                }
+                if (gridSpot.Status == GridSpotStatus.Empty)
+                {
+                    Console.WriteLine($"{gridSpot.SpotLetter}{gridSpot.SpotNumber}");
+                }
+                else if (gridSpot.Status == GridSpotStatus.Hit)
+                {
+                    Console.WriteLine(" X ");
+                }
+                else if (gridSpot.Status == GridSpotStatus.Miss)
+                {
+                    Console.WriteLine(" O ");
+                }
+                else
+                {
+                    Console.WriteLine(" ? ");
+                }
+            }
         }
 
         private static void WelcomeMessage()
@@ -38,15 +110,12 @@ namespace BattleshipLite
             PlayerInfoModel output = new PlayerInfoModel();
             Console.WriteLine($"Player information for {playerTitle}");
 
-            //Ask user for name
             output.UsersName = AskForUserName();
 
-            //Load up shot grid
             GameLogic.InitializeGrid(output);
 
-            //Ask the user for their 5 ship placements
             PlaceShips(output);
-            //Clear
+
             Console.Clear();
             return output;
         }
